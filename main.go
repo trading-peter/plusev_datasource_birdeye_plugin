@@ -5,12 +5,12 @@ import (
 	"strings"
 	"time"
 
-	ex "github.com/plusev-terminal/go-plugin-common/datasrc/exchange"
-	"github.com/plusev-terminal/go-plugin-common/logging"
-	m "github.com/plusev-terminal/go-plugin-common/meta"
-	"github.com/plusev-terminal/go-plugin-common/plugin"
-	"github.com/plusev-terminal/go-plugin-common/requester"
-	"github.com/plusev-terminal/go-plugin-common/trading"
+	ex "github.com/plusev-terminal/go-plugin-common/v2/datasrc/exchange"
+	"github.com/plusev-terminal/go-plugin-common/v2/logging"
+	m "github.com/plusev-terminal/go-plugin-common/v2/meta"
+	"github.com/plusev-terminal/go-plugin-common/v2/plugin"
+	"github.com/plusev-terminal/go-plugin-common/v2/requester"
+	"github.com/plusev-terminal/go-plugin-common/v2/trading"
 
 	"github.com/trading-peter/plusev_datasource_birdeye_plugin/birdeye"
 	"github.com/trading-peter/plusev_datasource_birdeye_plugin/ratelimits"
@@ -193,7 +193,7 @@ func (p *BirdeyePlugin) handleGetMarket(params map[string]any) plugin.Response {
 		Address:   m.Base.Address + "|" + m.Quote.Address,
 		Base:      baseSymbol,
 		Quote:     quoteSymbol,
-		AssetType: "spot",
+		AssetType: trading.AssetTypeSpot,
 	}, time.Hour)
 }
 

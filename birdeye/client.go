@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/plusev-terminal/go-plugin-common/logging"
-	"github.com/plusev-terminal/go-plugin-common/plugin"
-	rt "github.com/plusev-terminal/go-plugin-common/requester/types"
-	"github.com/plusev-terminal/go-plugin-common/trading"
+	"github.com/plusev-terminal/go-plugin-common/v2/logging"
+	"github.com/plusev-terminal/go-plugin-common/v2/plugin"
+	rt "github.com/plusev-terminal/go-plugin-common/v2/requester/types"
+	"github.com/plusev-terminal/go-plugin-common/v2/trading"
 )
 
 const baseURL = "https://public-api.birdeye.so"

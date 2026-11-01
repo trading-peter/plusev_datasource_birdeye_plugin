@@ -18,7 +18,7 @@ package ratelimits
 import (
 	"time"
 
-	"github.com/plusev-terminal/go-plugin-common/meta"
+	"github.com/plusev-terminal/go-plugin-common/v2/meta"
 )
 
 // BirdeyeAPI returns the manifest rate-limit rules for public-api.birdeye.so.
