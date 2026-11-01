@@ -46,7 +46,7 @@ func (p *BirdeyePlugin) GetMeta() m.Meta {
 		Category:    "dex",
 		Description: "Historical OHLCV price data via Birdeye. Supports tokens across Solana, Ethereum, Base, Arbitrum, and more. Ideal for DEX token pricing and cost basis calculation.",
 		Author:      "trading_peter",
-		Version:     "v1.0.0",
+		Version: "v1.1.0",
 		Repository:  "https://github.com/trading-peter/plusev_datasource_birdeye_plugin",
 		Tags:        []string{"birdeye", "dex", "ohlcv", "solana", "ethereum", "defi"},
 		Contacts: []m.AuthorContact{
